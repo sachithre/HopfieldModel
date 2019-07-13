@@ -141,8 +141,8 @@ public class HopfieldModel {
 	    public static void main(String[] args) {
 
 	        //Input Pattern set
-	        int[][] patterns = {{0, 0, 0, 0, 0, 0, 0, 0}, {0, 1, 0, 1, 0, 1, 0, 1}, {0, 0, 1, 1, 0, 0, 1, 1,}, {0, 0, 0, 0, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1, 1}};
-	        int[][] patterns2 = {{1, 1, 0, 1, 0, 1}, {0, 1, 0, 1, 0, 1}, {1, 1, 1, 0, 0, 1}, {1, 0, 1, 1, 1, 0}, {1, 1, 0, 1, 1, 0}};
+	        int[][] patterns2 = {{0, 0, 0, 0, 0, 0, 0, 0}, {0, 1, 0, 1, 0, 1, 0, 1}, {0, 0, 1, 1, 0, 0, 1, 1,}, {0, 0, 0, 0, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1, 1}};
+	        int[][] patterns = {{1, 1, 0, 1, 0, 1}, {0, 1, 0, 1, 0, 1}, {1, 1, 1, 0, 0, 1}, {1, 0, 1, 1, 1, 0}, {1, 1, 0, 1, 1, 0}};
 	        double alpha = 0.6;
 	        int[] new_pattern = {1, 0, 1, 1, 0, 1};
 	        double threshould = 3.0;
@@ -187,7 +187,7 @@ public class HopfieldModel {
 	         
 	        
 	        //Correct the new pattern
-	        correctNewPattern(t_w_matrix, new_pattern, threshould);
+	        correctNewPattern(t_w_matrix, new_pattern2, threshould);
 	    }
 
 }
